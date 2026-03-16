@@ -17,14 +17,14 @@
 
 AIはユーザーのラフな着想（/docs/spec-memo.md）を読み取り、対話を通じて追加内容を末尾に追記。合意後、以下の構成で [project-name]-spec.md を出力する。
 
-- **2.0 Document Control**: 作成日, 改訂日, 改訂内容 を yyyy-mm-dd hh:mm 形式で記録。
-- **2.0.5 Specification Hearing**: AIはラフな仕様メモ(`spec-memo.md`)を読み取った後、直ちに仕様書を生成するのではなく、不明点や異常系についてユーザーに数回ヒアリングを行い、解像度を上げてから次項以降の作成に進む。
-- **2.1 Core Intent**: 解決する課題、中核となる遊びや学び、価値を箇条書きで定義。
-- **2.2 Glossary**: 用語定義、ドメイン概念、および手法（ANMS, EARS等）の定義。EARS構文は `[If/When <trigger>], the <system> shall <response>` 等の基本形で記述し、この形式を前提とする。
-- **2.3 Technical Constraints & Directory**: 言語・ライブラリ制約（使用禁止含む）、および ```text 形式の構成図。
-- **2.4 Requirements (F-XXX / NF-XXX)**: EARS構文を用いた機能・非機能要件の定義。
-- **2.5 Data & Interface Schema**: 型定義、Mermaidクラス図、主要シグネチャと依存関係。
-- **2.6 Phase Strategy**: v1 (最小構成) → v2 (高度化) のロードマップとテストのマイルストーン。
+- **1.0 Document Control**: 作成日, 改訂日, 改訂内容 を yyyy-mm-dd hh:mm 形式で記録。
+- **1.0.5 Specification Hearing**: AIはラフな仕様メモ(`spec-memo.md`)を読み取った後、直ちに仕様書を生成するのではなく、不明点や異常系についてユーザーに数回ヒアリングを行い、解像度を上げてから次項以降の作成に進む。
+- **1.1 Core Intent**: 解決する課題、中核となる遊びや学び、価値を箇条書きで定義。
+- **1.2 Glossary**: 用語定義、ドメイン概念、および手法（ANMS, EARS等）の定義。EARS構文は `[If/When <trigger>], the <system> shall <response>` 等の基本形で記述し、この形式を前提とする。
+- **1.3 Technical Constraints & Directory**: 言語・ライブラリ制約（使用禁止含む）、および ```text 形式の構成図。
+- **1.4 Requirements (F-XXX / NF-XXX)**: EARS構文を用いた機能・非機能要件の定義。
+- **1.5 Data & Interface Schema**: 型定義、Mermaidクラス図、主要シグネチャと依存関係。
+- **1.6 Phase Strategy**: v1 (最小構成) → v2 (高度化) のロードマップとテストのマイルストーン。
 
 ## 3. Task Progress管理パート (タスク遂行プロトコル)
 
