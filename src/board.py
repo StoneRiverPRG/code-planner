@@ -46,6 +46,13 @@ class Board:
         # 2. 指定されたセル (grid_id - 1) が None かどうかチェックする
         # 3. 空であれば self.cells[index] に mark を代入し True を返す
         # 4. 埋まっていれば何もせず False を返す
+        if 1 <= grid_id <= 9:
+            index = grid_id - 1
+            if self.cells[index] is None:
+                self.cells[index] = mark
+                return True
+        else:
+            print("Error: grid_id must be between 1 and 9.")
         return False
 
     def is_full(self) -> bool:
