@@ -15,23 +15,30 @@ class Board:
         [F-004]: The system shall display the current 3x3 board state in CUI.
         """
         # grid_id (1-9) に対応する形で3x3の形式で表示する
-        # 例: 
+        # 例:
         #  1 | 2 | 3
         # -----------
         #  etc...
         # 埋まっている箇所は 'O' や 'X' を表示し、空は数字を表示する。
-        pass
+        for i in range(0, 9, 3):
+            row = []
+            for j in range(3):
+                cell_value = self.cells[i + j]
+                row.append(cell_value if cell_value is not None else str(i + j + 1))
+            print(f" {row[0]} | {row[1]} | {row[2]} ")
+            if i < 6:
+                print("-----------")
 
     def place_mark(self, grid_id: int, mark: str) -> bool:
         """
         指定されたマスにマークを配置する。
         [F-002]: [If a player inputs 1-9], the system shall place their mark on the corresponding grid if it's empty.
         [F-003]: [If the input is invalid or grid is occupied], the system shall display an error and re-prompt.
-        
+
         Args:
             grid_id: 1~9の整数
             mark: 'O' または 'X'
-        
+
         Returns:
             bool: 配置に成功した場合はTrue、失敗（既に埋まっている等）はFalse
         """
