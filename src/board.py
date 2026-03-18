@@ -70,4 +70,8 @@ class Board:
         空いているマスの grid_id リストを返す（AI用）。
         """
         # None のマスのインデックス+1をリストにして返す
-        return []
+        empty_cells = []
+        for i, cell in enumerate(self.cells):
+            if cell is None:
+                empty_cells.append(i + 1)
+        return empty_cells
