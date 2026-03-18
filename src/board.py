@@ -60,7 +60,10 @@ class Board:
         全てのマスが埋まっているか確認する。
         """
         # self.cells 内に None が含まれていないか確認する
-        return False
+        for cell in self.cells:
+            if cell is None:
+                return False
+        return True
 
     def get_empty_cells(self) -> List[int]:
         """
